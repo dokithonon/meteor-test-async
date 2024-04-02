@@ -15,3 +15,11 @@ Meteor.startup(async () => {
   }
   
 });
+
+import { check, Match } from 'meteor/check';
+Meteor.publish('pub1', function(myArg1) {
+  check(myArg1, String)
+  this.unblock();
+  console.log('myArg1 : ', myArg1)
+  return Meteor.users.find();
+});

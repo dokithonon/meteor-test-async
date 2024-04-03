@@ -1,13 +1,13 @@
 accounts-base@3.0.0-beta300.7
 accounts-password@3.0.0-beta300.7
 allow-deny@2.0.0-beta300.7
+audit-argument-checks@1.0.8-beta300.7
 autoupdate@2.0.0-beta300.7
 babel-compiler@7.11.0-beta300.7
 babel-runtime@1.5.2-beta300.7
 base64@1.0.13-beta300.7
 binary-heap@1.0.12-beta300.7
 blaze@3.0.0-alpha300.17
-blaze-hot@2.0.0-alpha300.17
 blaze-html-templates@3.0.0-alpha300.17
 blaze-tools@2.0.0-alpha300.17
 boilerplate-generator@2.0.0-beta300.7
@@ -34,7 +34,6 @@ facts-base@1.0.2-beta300.7
 fetch@0.1.4-beta300.7
 geojson-utils@1.0.12-beta300.7
 hot-code-push@1.0.5-beta300.7
-hot-module-replacement@0.5.4-beta300.7
 html-tools@2.0.0-alpha300.17
 htmljs@2.0.0-alpha300.17
 id-map@1.2.0-beta300.7
@@ -43,8 +42,10 @@ jquery@3.0.0
 launch-screen@1.3.1-beta300.7
 localstorage@1.2.1-beta300.7
 logging@1.3.3-beta300.7
+matb33:collection-hooks@1.3.1
 meteor@2.0.0-beta300.7
 meteor-base@1.5.2-beta300.7
+meteorhacks:inject-initial@1.0.3
 minifier-css@2.0.0-beta300.7
 minifier-js@3.0.0-beta300.7
 minimongo@2.0.0-beta300.7
@@ -53,7 +54,6 @@ mobile-status-bar@1.1.1-beta300.7
 modern-browsers@0.1.10-beta300.7
 modules@0.19.1-beta300.7
 modules-runtime@0.13.2-beta300.7
-modules-runtime-hot@0.14.3-beta300.7
 mongo@2.0.0-beta300.7
 mongo-decimal@0.1.4-beta300.7
 mongo-dev-server@1.1.1-beta300.7
@@ -61,10 +61,14 @@ mongo-id@1.0.9-beta300.7
 npm-mongo@4.16.1-beta300.7
 observe-sequence@2.0.0-alpha300.17
 ordered-dict@1.2.0-beta300.7
+ostrio:cookies@2.8.1
+ostrio:files@3.0.0-beta.5
+ostrio:flow-router-extra@2.11.0
 promise@1.0.0-beta300.7
 random@1.2.2-beta300.7
 rate-limit@1.1.2-beta300.7
 react-fast-refresh@0.2.8-beta300.7
+reactive-dict@1.3.2-beta300.7
 reactive-var@1.0.13-beta300.7
 reload@1.3.2-beta300.7
 retry@1.1.1-beta300.7
@@ -86,3 +90,4 @@ underscore@1.0.14-beta300.7
 url@1.3.2
 webapp@2.0.0-beta300.7
 webapp-hashing@1.1.2-beta300.7
+zodern:types@1.0.13

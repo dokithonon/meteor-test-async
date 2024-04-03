@@ -17,9 +17,14 @@ Meteor.startup(async () => {
 });
 
 import { check, Match } from 'meteor/check';
-Meteor.publish('pub1', function(myArg1) {
-  check(myArg1, Match.Optional(String))
+Meteor.publish('pub1', function(taskId, options) {
+  check(taskId, String);
+  check(options, Match.Optional({
+    projection: Match.Optional(Object),
+    debugText: Match.Optional(String),
+  }));
   this.unblock();
-  console.log('myArg1 : ', myArg1)
+  console.log('taskId : ', taskId)
+  console.log('options : ', options)
   return Meteor.users.find({});
 });

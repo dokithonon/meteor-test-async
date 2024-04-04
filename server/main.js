@@ -1,6 +1,25 @@
 import { Meteor } from 'meteor/meteor';
 
+
+const Docs = new Mongo.Collection('docs');
+
 Meteor.startup(async () => {
+
+  await Docs.removeAsync({})
+
+  Docs.after.update(async function(userId, doc, fieldNames, modifier, options) {
+    console.log('Docs.after.update > hook trigger : ', doc)
+  });
+  
+  Docs.after.insert(async function(userId, doc) {
+    console.log('Docs.after.insert > hook trigger : ', doc)
+  });
+
+  Meteor.setTimeout(async function() {
+    console.log('inserting a doc')
+    await Docs.insertAsync({test: 'hook'})
+  }, 2000);
+  
   // code to run on server at startup
   await Meteor.users.removeAsync({});
   try {
@@ -13,5 +32,8 @@ Meteor.startup(async () => {
   catch (e) {
     console.error(e);
   }
+
+  
+
   
 });

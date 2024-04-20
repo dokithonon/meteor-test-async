@@ -17,7 +17,16 @@ Meteor.startup(async () => {
 
   Meteor.setTimeout(async function() {
     console.log('inserting a doc')
-    await Docs.insertAsync({test: 'hook'})
+    const _id = '1'
+    await Docs.insertAsync({_id, key1: 'hook inserting'})
+
+    Meteor.setTimeout(async function() {
+      console.log('updating a doc')
+      const _id = '1'
+      await Docs.updateAsync(_id, {$set: {key1: 'hook update'}})
+    }, 2000);
+
+
   }, 2000);
   
   // code to run on server at startup

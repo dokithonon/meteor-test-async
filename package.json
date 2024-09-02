@@ -1,5 +1,5 @@
 {
-  "name": "meteor-test-accounts",
+  "name": "meteor-test-async",
   "private": true,
   "scripts": {
     "start": "WARN_WHEN_USING_OLD_API=true meteor run",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.23.5",
+    "datatables.net-bs5": "^2.1.5",
     "jquery": "^3.7.1",
     "meteor-node-stubs": "^1.2.7"
   },

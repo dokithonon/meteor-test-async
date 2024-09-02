@@ -21,3 +21,16 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+
+const Docs = new Mongo.Collection('docs');
+
+import Tabular from 'meteor/aldeed:tabular';
+
+new Tabular.Table({
+  name: "Docs",
+  collection: Docs,
+  columns: [
+    {data: "_id", title: "ID"},
+    {data: 'keyA', title: "Col 1"}
+  ]
+});
